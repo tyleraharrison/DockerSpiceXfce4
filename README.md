@@ -22,10 +22,10 @@ This repository contains **Dockerfile** of [Ubuntu Desktop (Xfce4)](http://xfce.
 
 	docker run -p 5900:5900 tyleraharrison/dockerspicexfce4
 
-If you local user is 'myusername' and your uid is '1000' and you want map your /home/myusername in Docker:
+If you local user is 'user' and your uid is '1000' and you want map your /home/user in Docker:
 
 
-	docker run -p 5900:5900 -e SPICE_USER=myusername -e SPICE_UID=1000 -v /home/myusername:/home/myusername -e SPICE_PASSWD="azerty" -e SPICE_LOCAL="fr_FR.UTF-8" -e SPICE_RES="1366x768" tyleraharrison/dockerspicexfce4
+	docker run -p 5900:5900 -e SPICE_USER=user -e SPICE_UID=1000 -v /home/user:/home/user -e SPICE_PASSWD="azerty" -e SPICE_LOCAL="fr_FR.UTF-8" -e SPICE_RES="1366x768" tyleraharrison/dockerspicexfce4
 
 Connect via Spice client 
 	
