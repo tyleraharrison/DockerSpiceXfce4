@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    dockerspicexfce4:
+        ports:
+            - '5900:5900'
+        build:
+            context: .
+            dockerfile: Dockerfile
+        environment:
+            - SPICE_USER=user
+            - SPICE_UID=1000
+            - SPICE_PASSWD=user
+            - SPICE_RES=1366x768
+            - BROWSER=firefox
+        image: gauthierc/dockerspicexfce4:latest
